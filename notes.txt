@@ -12,3 +12,7 @@ icacls.exe $path /GRANT:R "$($env:USERNAME):(R)"
 # Disable inheritance and remove inherited permissions
 icacls.exe $path /inheritance:r
 
+----------------------------------------------------------------
+
+winget install --id GitHub.cli
+gh auth login
