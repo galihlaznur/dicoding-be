@@ -1,5 +1,6 @@
 npm install nodemon --save-dev
 npm init @eslint/config@latest
+npm install @hapi/hapi
 npm install nanoid@3
 
 ----------------------------------------------------------------
@@ -16,3 +17,9 @@ icacls.exe $path /inheritance:r
 
 winget install --id GitHub.cli
 gh auth login
+npm install -g pm2
+
+----------------------------------------------------------------
+
+npm install newman --g
+newman run "Latihan BE Dicoding.postman_collection.json" --environment "Notes API Test.postman_environment.json"
